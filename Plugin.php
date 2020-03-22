@@ -11,6 +11,7 @@ class Plugin extends Base
     {
         $this->template->setTemplateOverride('project_header/views', 'SortBoardByDates:project_header/views');
         $this->template->setTemplateOverride('board/table_tasks', 'SortBoardByDates:board/table_tasks');
+        $this->template->setTemplateOverride('board/table_column', 'SortBoardByDates:board/table_column');
         $this->template->hook->attach('template:project:dropdown', 'SortBoardByDates:board/dropdown');
         $this->template->hook->attach('template:project:sidebar', 'SortBoardByDates:board/sidebar');
     }
@@ -37,7 +38,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.5.0';
+        return '0.6.0';
     }
 
     public function getPluginHomepage()
@@ -47,6 +48,6 @@ class Plugin extends Base
 
     public function getCompatibleVersion()
     {
-        return '>=1.2.8';
+        return '>=1.2.9';
     }
 }
