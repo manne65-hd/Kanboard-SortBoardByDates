@@ -4,7 +4,7 @@ Sort Board By Dates for kanboard
 Allows boards to be sorted by different dates
 - Date due, started, created, modified, moved, closed ...
 - ... or *(of course)* in kanboard default-mode
-  - The new actions to reorder tasks by column *(coming with Kanboard 1.2.9)* are ONLY displayed, if the current board is set to kanboard's default sort-method!
+  - The new actions to reorder tasks by column *(coming with Kanboard 1.2.9 and 1.2.11)* are ONLY displayed, if the current board is set to kanboard's default sort-method!
 - ONLY project-managers/admins can set the preferences via a new "Board sort-settings"-panel on a per-project base
 - includes german translation
 
@@ -31,11 +31,11 @@ If any other than the default sort-method is selected, there is an icon next to 
 ![New BoardView](https://user-images.githubusercontent.com/48651533/77249329-89926180-6c40-11ea-9bcd-5ab3a9800b7a.png)
 
 #### New actions to reorder tasks by column NOT displayed!
-The new actions to reorder tasks by column *(coming with Kanboard 1.2.9)* are NOT displayed, if the current board ist set to a NON-default sort-method, because this plugin will overrule these settings.
+The new actions to reorder tasks by column *(coming with Kanboard 1.2.9 and 1.2.11)* are NOT displayed, if the current board is set to a NON-default sort-method, because this plugin will overrule these settings.
 
 If the current board ist set to the Kanboard-default sort-method the new actions are of course available!
 
-![NewKanboardSortMethods1 2 9-disabled](https://user-images.githubusercontent.com/48651533/77255489-33d1af80-6c68-11ea-989f-3104b794a7a4.png)
+![NewKanboardSortMethods1 2 11-disabled](https://user-images.githubusercontent.com/48651533/77260730-101f6100-6c8a-11ea-9b66-55610b568985.png)
 
 
 Credits
@@ -53,7 +53,7 @@ Author
 Requirements
 ------------
 
-- Kanboard >= 1.2.9
+- Kanboard >= 1.2.11
 
 Installation
 ------------
