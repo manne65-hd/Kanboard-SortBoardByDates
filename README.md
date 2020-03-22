@@ -25,7 +25,7 @@ Besides the option to configure this plugin in the new settings-panel via *Confi
 ![New ProjectDropdown](https://user-images.githubusercontent.com/48651533/77249294-53ed7880-6c40-11ea-9e30-b9ae1fece58b.png)
 
 #### Board-view
-If any other than the default sort-method is selected, there is an icon next to the *board-TAB* indicating that sort-method. In addition you can get a plaintext-tooltip by hovering the mouse over that icon.
+If any other than the default sort-method is selected, there is are icons next to the *board-TAB* indicating that sort-method. In addition you can get a plaintext-tooltip by hovering the mouse over that icon.
 
 ![New BoardView](https://user-images.githubusercontent.com/48651533/77249329-89926180-6c40-11ea-9bcd-5ab3a9800b7a.png)
 
