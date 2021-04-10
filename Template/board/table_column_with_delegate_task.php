@@ -42,7 +42,7 @@
                                 <i class="fa fa-minus-square fa-fw"></i>
                                 <a href="#" class="board-toggle-column-view" data-column-id="<?= $column['id'] ?>"><?= t('Hide this column') ?></a>
                             </li>
-                            <?php if ($this->projectRole->canCreateTaskInColumn($column['project_id'], $column['id'])): ?>
+                            <?php if ($this->projectRole->canCreateTaskInColumn($column['project_id'], $column['id'])  && $this->projectRole->getProjectUserRole($column['project_id']) !== \Kanboard\Core\Security\Role::PROJECT_VIEWER): ?>
                                 <li>
                                     <?= $this->modal->medium('align-justify', t('Create tasks in bulk'), 'TaskBulkController', 'show', array('project_id' => $column['project_id'], 'column_id' => $column['id'], 'swimlane_id' => $swimlane['id'])) ?>
                                 </li>
