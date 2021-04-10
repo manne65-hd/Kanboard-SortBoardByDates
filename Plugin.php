@@ -9,6 +9,7 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        // Template OVERRIDES ...
         $this->template->setTemplateOverride('project_header/views', 'SortBoardByDates:project_header/views');
         $this->template->setTemplateOverride('board/table_tasks', 'SortBoardByDates:board/table_tasks');
         // make compatible with PLUGIN DelegateTask
@@ -17,6 +18,7 @@ class Plugin extends Base
         } else {
             $this->template->setTemplateOverride('board/table_column', 'SortBoardByDates:board/table_column_vanilla');
         }
+        // Template HOOK-attachments ...
         $this->template->hook->attach('template:project:dropdown', 'SortBoardByDates:board/dropdown');
         $this->template->hook->attach('template:project:sidebar', 'SortBoardByDates:board/sidebar');
     }
@@ -43,7 +45,7 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '0.7.0';
+        return '0.8.0';
     }
 
     public function getPluginHomepage()
@@ -53,6 +55,6 @@ class Plugin extends Base
 
     public function getCompatibleVersion()
     {
-        return '>=1.2.11';
+        return '>=1.2.18';
     }
 }
