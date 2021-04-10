@@ -7,7 +7,7 @@
     $SortBoardBy_CompareDate = substr($SortBoardBy_Method, 12);
 ?>
 
-<tr class="board-swimlane board-swimlane-tasks-<?= $swimlane['id'] ?>">
+<tr class="board-swimlane board-swimlane-tasks-<?= $swimlane['id'] ?><?= $swimlane['task_limit'] && $swimlane['nb_tasks'] > $swimlane['task_limit'] ? ' board-task-list-limit' : '' ?>">
     <?php foreach ($swimlane['columns'] as $column): ?>
     <?php
         if ($SortBoardBy_Method != 'sortboardby_kb_default')  {
@@ -39,7 +39,7 @@
 
         <td class="
             board-column-<?= $column['id'] ?>
-            <?= $column['task_limit'] > 0 && $column['column_nb_tasks'] > $column['task_limit'] ? 'board-task-list-limit' : '' ?>
+            <?= $column['task_limit'] > 0 && $column['column_nb_open_tasks'] > $column['task_limit'] ? 'board-task-list-limit' : '' ?>
             "
         >
 
@@ -66,8 +66,8 @@
                 data-swimlane-id="<?= $swimlane['id'] ?>"
                 data-task-limit="<?= $column['task_limit'] ?>">
                 <div class="board-rotation-wrapper">
-                    <div class="board-column-title board-rotation board-toggle-column-view" data-column-id="<?= $column['id'] ?>" title="<?= t('Show this column') ?>">
-                        <i class="fa fa-plus-square" title="<?= $this->text->e($column['title']) ?>"></i> <?= $this->text->e($column['title']) ?>
+                    <div class="board-column-title board-rotation board-toggle-column-view" data-column-id="<?= $column['id'] ?>" title="<?= $this->text->e($column['title']) ?>">
+                        <i class="fa fa-plus-square" title="<?= t('Show this column') ?>" role="button" aria-label="<?= t('Show this column') ?>"></i> <?= $this->text->e($column['title']) ?>
                     </div>
                 </div>
             </div>
