@@ -33,9 +33,14 @@ If any other than the default sort-method is selected, there is an icon next to 
 #### New actions to reorder tasks by column NOT displayed!
 The new actions to reorder tasks by column *(coming with Kanboard 1.2.9 and 1.2.11)* are NOT displayed, if the current board is set to a NON-default sort-method, because this plugin will overrule these settings.
 
-If the current board ist set to the Kanboard-default sort-method the new actions are of course available!
+If the current board is set to the Kanboard-default sort-method the new actions are of course available!
 
 ![NewKanboardSortMethods1 2 11-disabled](https://user-images.githubusercontent.com/48651533/77260730-101f6100-6c8a-11ea-9b66-55610b568985.png)
+
+ToDo ...
+--------
+Need to improve the plugin to adress this issue:
+https://github.com/manne65-hd/Kanboard-SortBoardByDates/issues
 
 
 Credits
@@ -53,7 +58,7 @@ Author
 Requirements
 ------------
 
-- Kanboard >= 1.2.11
+- Kanboard >= 1.2.18
 
 Installation
 ------------
