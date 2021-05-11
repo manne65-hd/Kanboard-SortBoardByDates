@@ -5,6 +5,13 @@
     $SortBoardBy_UndatedOrder = $this->task->projectMetadataModel->get($project['id'], 'SortBoardBy_UndatedOrder', 'sortboardby_undatedorder_before');
     // Strip off prefix 'sortboardby_' to get the name of the date-field to be sorted by ...
     $SortBoardBy_CompareDate = substr($SortBoardBy_Method, 12);
+
+    /* provide compatibilty with my AdvancedCardOptions-plugin
+     *--------------------------------------------------------
+     * The ACO-configuration-parameters have been passed into this template as $ACO_config
+     * This ARRAY ... can(and will) be passed to next level of templates as $ACO!
+    */
+    $ACO_config = isset($ACO_config) ? $ACO_config : array();
 ?>
 
 <tr class="board-swimlane board-swimlane-tasks-<?= $swimlane['id'] ?><?= $swimlane['task_limit'] && $swimlane['nb_tasks'] > $swimlane['task_limit'] ? ' board-task-list-limit' : '' ?>">
@@ -54,6 +61,7 @@
                     <?= $this->render($not_editable ? 'board/task_public' : 'board/task_private', array(
                         'project' => $project,
                         'task' => $task,
+                        'ACO' => $ACO_config,
                         'board_highlight_period' => $board_highlight_period,
                         'not_editable' => $not_editable,
                     )) ?>
