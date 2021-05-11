@@ -1,0 +1,29 @@
+Version 0.8.2 (May 11, 2021)
+-------------------------------
+* Added compatibilty with my AdvancedCardOptions-plugin, because they both OVERWRITE the same template-file (board/table_tasks.php)
+* Added a ChangeLog
+
+Version 0.8.1 (April 10, 2020)
+-------------------------------
+* Updated "version-tag" in Plugin.php
+
+Version 0.8.0 (April 10, 2021)
+-------------------------------
+* Incorporated template-changes that came with Kanboard 1.2.12 > 1.2.18
+* Added compatibilty with my DelegateTask-plugin, because both OVERWRITE the same template-file (board/table_column.php)
+* Prepared compatibility with the upcoming new language "Deutsch (du)"
+
+Version 0.7.0 (May 22, 2020)
+-------------------------------
+* Made adjustments for Kanboard 1.2.11
+  * The new actions to reorder tasks by column (introduced with Kanboard 1.2.9) are ONLY displayed, if the current board is set to kanboard's default sort-method!
+    * This also applies to the new possibility to sort columns by due date that came with Kanboard 1.2.11
+
+Version 0.6.0 (May 22, 2020)
+-------------------------------
+* Made adjustments for Kanboard 1.2.9
+  * The new actions to reorder tasks by column are ONLY displayed, if the current board is set to kanboard's default sort-method!
+
+Version 0.5.0 (May 22, 2020)
+-------------------------------
+* initial release of the plugin developed with Kanboard Version 1.2.8
